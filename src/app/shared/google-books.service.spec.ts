@@ -481,7 +481,8 @@ describe('GoogleBooksService', () => {
       });
 
       // Perform a request and make sure we get the response we expect
-      let book: Book = null;
+      // let book: Book = null;
+      let book: any = null;
       service.retrieveBook("js2P_8lbR2wC").subscribe(value => book = value);
       tick();
 
